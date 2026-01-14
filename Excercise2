@@ -1,0 +1,31 @@
+>>> age=int(19)
+>>> print(age)
+19
+>>> height=float(3.14)
+>>> print(height)
+3.14
+>>> x=1+7j
+>>> print(x)
+(1+7j)
+>>> print(f"The area of the triangle is {0.5*base*height}" )
+The area of the triangle is 100
+>>> a = int(input("Enter side a : "))
+Enter side a : 5
+>>> b = int(input("Enter side b : "))
+Enter side b : 4
+>>> c = int(input("Enter side c : "))
+Enter side c : 3
+>>> print(f"The perimeter of the triangle is {a+b+c}")
+The perimeter of the triangle is 12
+>>> length = int(input("Enter Length : "))
+Enter Length : 54
+>>> Width = int(input("Enter Width : "))
+Enter Width : 46
+>>> print(f"The perimeter of Rectangle is {2*(length+Width)}")
+The perimeter of Rectangle is 200
+>>> r = int(input("Enter the Radius of circle : "))
+Enter the Radius of circle : 6
+>>> print(f"The Area of Circle is {3.14*(r**2)}")
+The Area of Circle is 113.04
+>>> print(f"The Circumference of Circle is {2*3.14*r}")
+The Circumference of Circle is 37.68
