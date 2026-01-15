@@ -1,0 +1,78 @@
+>>> age=int(19)
+>>> print(age)
+19
+
+>>> height=float(3.14)
+>>> print(height)
+3.14
+
+>>> x=1+7j
+>>> print(x)
+(1+7j)
+
+>>> base=int(input("Enter Base : "))
+Enter Base : 20
+>>> height=int(input("Enter Height : "))
+Enter Height : 10
+>>> print(f"The area of the triangle is {0.5*base*height}" )
+The area of the triangle is 100
+
+>>> a = int(input("Enter side a : "))
+Enter side a : 5
+>>> b = int(input("Enter side b : "))
+Enter side b : 4
+>>> c = int(input("Enter side c : "))
+Enter side c : 3
+>>> print(f"The perimeter of the triangle is {a+b+c}")
+The perimeter of the triangle is 12
+
+>>> length = int(input("Enter Length : "))
+Enter Length : 54
+>>> width = int(input("Enter Width : "))
+Enter Width : 46
+>>> print(f"The perimeter of Rectangle is {lenghth*width}")
+The perimeter of Rectangle is 2484
+>>> print(f"The perimeter of Rectangle is {2*(length+width)}")
+The perimeter of Rectangle is 200
+
+>>> r = int(input("Enter the Radius of circle : "))
+Enter the Radius of circle : 6
+>>> print(f"The Area of Circle is {3.14*(r**2)}")
+The Area of Circle is 113.04
+>>> print(f"The Circumference of Circle is {2*3.14*r}")
+The Circumference of Circle is 37.68
+
+>>> #in y = mx + c , m is slope
+>>> m = 2
+>>> y = -2
+>>> x = -y/m
+>>> print("Slope is ",m)
+Slope is  2
+>>> print("x intercept is",x)
+x intercept is 1.0
+>>> print("y intercept is",y)
+y intercept is -2
+
+>>> x1,y1=2,2
+>>> x2,y2=6,10
+>>> print("The Slope of the line is",(y2-y1)/(x2-x1))
+The Slope of the line is 2.0
+>>> print("The Euclidean Distance is",(((x2-x1)**2)+((y2-y1)**2))**0.5)
+The Euclidean Distance is 8.94427190999916
+
+>>> if m>(y2-y1)/(x2-x1):
+...     print("task 1 slope is greater than task 2 slope")
+... else:
+...     print("task 2 slope is greater than task 1 slope")
+...
+task 2 slope is greater than task 1 slope
+
+
+
+
+
+
+
+
+
+
