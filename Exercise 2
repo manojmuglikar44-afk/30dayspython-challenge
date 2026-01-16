@@ -83,12 +83,26 @@ len_python 6
 >>> print("len_python =",len_python)
 len_python = 6
 >>> print("len_dragon =",len_dragon)
-len_dragon = 6
+len_dragon = 6 
 
+>>> print('on' in 'dragon' and 'on' in 'python')
+True
 
+>>> print('jargon' in 'I hope this course is not full of jargon')
+True
 
+>>> print('on'not in 'dragon' and 'on' not in 'python')
+False
 
-
+>>> len_python = len('python')
+>>> print(len_python)
+6
+>>> float_length = float(len_python)
+>>> print(float_length)
+6.0
+>>> string_length = str(len_python)
+>>> print(string_length)
+6
 
 
 
