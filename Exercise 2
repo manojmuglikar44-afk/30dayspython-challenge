@@ -67,6 +67,26 @@ The Euclidean Distance is 8.94427190999916
 ...
 task 2 slope is greater than task 1 slope
 
+>>> for x in range(-10,10):
+...     y = x**2 + 6*x + 9
+...     if y==0:
+...         print("x =",x)
+...         print("y =",y)
+...
+x = -3
+y = 0
+
+>>> len_python=len("python")
+>>> len_dragon=len("dragon")
+>>> print("len_python",len_python)
+len_python 6
+>>> print("len_python =",len_python)
+len_python = 6
+>>> print("len_dragon =",len_dragon)
+len_dragon = 6
+
+
+
 
 
 
