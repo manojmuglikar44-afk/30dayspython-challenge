@@ -36,9 +36,23 @@ food_stuff_tp = fruits + vegetables + animal_products
 print(food_stuff_tp)
 ---> ('mango', 'banana', 'apple', 'grapes', 'potato', 'tomato', 'brinjal', 'onion', 'egg', 'milk', 'meat')
 
+food_stuff_tp=('mango', 'banana', 'apple', 'grapes', 'potato', 'tomato', 'brinjal', 'onion', 'egg', 'milk', 'meat')
 food_stuff_lt = list(food_stuff_tp)
-print(food_stuff_lt)                       # incomplete
----> ['mango', 'banana', 'apple', 'grapes', 'potato', 'tomato', 'brinjal', 'onion', 'egg', 'milk', 'meat']
+m_l= len(food_stuff_lt)//2
+print(m_l)
+print(food_stuff_lt)
+print(food_stuff_lt[:m_l] +food_stuff_lt[m_l+1:])
+---> 5
+['mango', 'banana', 'apple', 'grapes', 'potato', 'tomato', 'brinjal', 'onion', 'egg', 'milk', 'meat']
+['mango', 'banana', 'apple', 'grapes', 'potato', 'brinjal', 'onion', 'egg', 'milk', 'meat']
+
+food_stuff_tp=('mango', 'banana', 'apple', 'grapes', 'potato', 'tomato', 'brinjal', 'onion', 'egg', 'milk', 'meat')
+food_stuff_lt = list(food_stuff_tp)
+print('First 3 items =',food_stuff_lt[:3])
+print('Last 3 items =',food_stuff_lt[8:])
+---> First 3 items = ['mango', 'banana', 'apple']
+Last 3 items = ['egg', 'milk', 'meat']
+
 
 food_stuff_tp = ('mango', 'banana', 'apple', 'grapes', 'potato', 'tomato', 'brinjal', 'onion', 'egg', 'milk', 'meat')
 del(food_stuff_tp)
