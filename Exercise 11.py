@@ -47,3 +47,61 @@ print(f'Entered month is in {check_season('may')}')
 ---> Spring
 Entered month is in Spring
 
+def calculate_slope(a,m,c):  # with comparing ay=mx+c
+    if m == 0:
+        print('Your Equation is not a Straight line')
+    elif a == 0:
+        print(f'The slope of line is {m}')
+    else :
+        slope = m/a
+        print(f'The slope of line is {slope}')
+print(calculate_slope(1,2,3))
+print(calculate_slope(0,2,3))
+print(calculate_slope(1,0,3))
+---> The slope of line is 2.0
+None
+The slope of line is 2
+None
+Your Equation is not a Straight line
+None
+
+def calculate_slope(a,b,c):  # with comparing ax² + bx + c = 0
+    d = ((b*b) - 4*a*c)
+    root_1 = (-b + d)/2*a
+    root_2 = (-b - d)/2*a
+    if d >= 0:
+        if a == 0:
+            print('Your Equation is not quaadratic')
+            x = -c/b
+            print(f'Solution of given Equation is {x}')
+        elif b == 0:
+            i = (-c)**0.5
+            print(f'Solution of given Equation is {i}')
+        else :
+            print(f'Solution of given Quadratic Equation is {root_1} and {root_2}')
+    else :
+        print('Your solutions are Imaginary')
+print(calculate_slope(1,2,5)) # Imaginary
+print(calculate_slope(1,5,6)) # -2 , -3
+print(calculate_slope(0,2,3)) # -1.5
+print(calculate_slope(1,0,-4)) # 2
+---> Your solutions are Imaginary
+None
+Solution of given Quadratic Equation is -2.0 and -3.0
+None
+Your Equation is not quaadratic
+Solution of given Equation is -1.5
+None
+Solution of given Equation is 2.0
+None
+
+def print_list(*list):                       def print_list(*n):
+    for n in list:             or                return list(n)
+        print(n)                           print(print_list(1,2,3,4))
+print(print_list(1,2,3,4))
+---> 1                                     -->  [1, 2, 3, 4]
+2
+3
+4
+
+
