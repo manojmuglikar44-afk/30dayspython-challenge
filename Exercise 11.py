@@ -104,4 +104,86 @@ print(print_list(1,2,3,4))
 3
 4
 
+def reverse_list(arr):
+    rev_arr = []
+    for i in range(len(arr) - 1, -1, -1):
+        rev_arr.append(arr[i])
+    return rev_arr
+print(reverse_list([1, 2, 3, 4, 5]))  
+print(reverse_list(["A", "B", "C"]))  
+--->[5, 4, 3, 2, 1]
+['C', 'B', 'A']
+
+def capitalize_list_item(list):
+    or_list = input("Enter elements separated by space: ").split()
+    capitalize_list = []
+    for word in or_list:
+        capitalize_list.append(word.capitalize())
+    print(capitalize_list)
+capitalize_list_item(list)
+---> Enter elements separated by space: a b c d e f
+['A', 'B', 'C', 'D', 'E', 'F']
+
+def add_item(list,item):
+    list.append(item)
+    return list
+food_stuff = ['Potato', 'Tomato', 'Mango', 'Milk']
+print(add_item(food_stuff,'Meat'))
+numbers = [2, 3, 7, 9]
+print(add_item(numbers, 5))
+---> ['Potato', 'Tomato', 'Mango', 'Milk', 'Meat']
+[2, 3, 7, 9, 5]
+
+def remove_item(list,item):
+    list.remove(item)
+    return list
+food_stuff = ['Potato','Tomato','Mango','Milk']
+print(remove_item(food_stuff,'Mango'))
+numbers = [2,3,7,9]
+print(remove_item(numbers, 3))
+---> ['Potato', 'Tomato', 'Milk']
+[2, 7, 9]
+
+def sum_of_numbers():
+    num = int(input('Enter the number to add up to :'))
+    sum = 0
+    for i in range(num + 1):
+        sum = sum + i
+    print(sum)
+sum_of_numbers()
+---> Enter the number to add up to :5
+15
+Enter the number to add up to :10
+55
+Enter the number to add up to :100
+5050
+
+def sum_of_odds():
+    num = int(input('Enter a number : '))
+    sum = 0
+    for i in range(1, num + 1):
+        if i % 2 != 0:   
+            sum += i
+    return sum
+print(sum_of_odds())  
+---> Enter a number : 8
+16
+Enter a number : 9
+25
+
+def sum_of_even():
+    num = int(input('Enter a number : '))
+    sum = 0
+    for i in range(1, num + 1):
+        if i % 2 == 0:   
+            sum += i
+    return sum
+print(sum_of_even())
+---> Enter a number : 5
+6
+Enter a number : 6
+12
+
+
+
 
