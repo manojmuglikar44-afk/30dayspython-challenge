@@ -184,6 +184,41 @@ print(sum_of_even())
 Enter a number : 6
 12
 
+def evens_and_odds(n):
+    evens = []
+    odds = []
+    for i in range(n+1):
+        if i % 2 == 0:
+            evens.append(i)
+        else:
+            odds.append(i)
+    print("Total evens:", len(evens))
+    print("Total odds:", len(odds))
+    return evens, odds
+all_evens, all_odds = evens_and_odds(100)
+---> Total evens: 51
+Total odds: 50
 
+def factorial(n):
+    fact = 1
+    for i in range(1,n+1):
+        fact *= i
+    print(f'Factorial of {n} is {fact}')
+    return fact
+factorial(5)
+---> Factorial of 5 is 120
+
+def is_empty(value):
+    return not bool(value)
+print(is_empty(""))
+print(is_empty([]))        
+print(is_empty({}))        
+print(is_empty("Hello"))   
+print(is_empty([1, 2, 3])) 
+---> True
+True
+True
+False
+False
 
 
