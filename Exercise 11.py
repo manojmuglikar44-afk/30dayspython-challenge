@@ -223,6 +223,44 @@ False
 
 def calculate_mean(data):
     return sum(data)/len(data)
+def calculate_median(data):   
+    if len(data) == 0: 
+        return None 
+    sorted_data = sorted(data) 
+    mid = len(data) // 2 
+    if len(data) % 2 == 0: 
+        return (sorted_data[mid - 1] + sorted_data[mid]) / 2 
+    else: 
+        return sorted_data[mid]
+def calculate_range(data):
+    max_value = max(data)
+    min_value = min(data)
+    range = max_value - min_value
+    return range
+def calculate_variance(data):
+    mean = sum(data)/len(data)
+    numerator = sum((data - mean) ** 2 for data in data) 
+    return numerator / len(data)
+def calculate_variance(data):
+    mean = sum(data)/len(data)
+    numerator = sum((data - mean) ** 2 for data in data) 
+    return numerator / len(data)
+def calculate_std(data):
+    variance = calculate_variance(data)
+    return variance**1/2
+---> numbers = [4, 2, 8, 6, 4, 10, 2]
+print(calculate_mean(numbers))
+print(calculate_median(numbers))
+print(calculate_range(numbers))
+print(calculate_variance(numbers))
+print(calculate_std(numbers))
+
+
+
+
+
+
+
 
 
 
