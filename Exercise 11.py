@@ -255,6 +255,25 @@ print(calculate_range(numbers))
 print(calculate_variance(numbers))
 print(calculate_std(numbers))
 
+def greet(name = "Guest"):
+    print(f"Hello, {name}!")
+greet()
+greet('Alice')
+---> Hello, Guest!
+Hello, Alice!
+
+#Exercises: Level 3
+def is_prime(n):
+    if n <= 1:
+        return 
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+print(is_prime(11))
+print(is_prime(121))
+---> True
+False
 
 
 
