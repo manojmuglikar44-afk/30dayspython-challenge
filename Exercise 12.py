@@ -1,3 +1,4 @@
+#Exercises: Level 1
 import random
 import string
 def user_id_gen_by_user():
@@ -39,3 +40,4 @@ print(rgb_color_gen())
 ---> rgb(238,184,230)
 rgb(242,19,12)
 
+#Exercises: Level 2
