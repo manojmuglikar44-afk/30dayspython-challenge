@@ -41,3 +41,4 @@ print(rgb_color_gen())
 rgb(242,19,12)
 
 #Exercises: Level 2
+
