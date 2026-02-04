@@ -42,3 +42,17 @@ rgb(242,19,12)
 
 #Exercises: Level 2
 
+import random
+def list_of_hexa_colors(count):
+  colors = []
+  for _ in range(count):
+    hex_digits = [random.choice('0123456789abcdef') for _ in range(6)]
+    color = '#' + ''.join(hex_digits)
+    colors.append(color)
+  return colors
+print(list_of_hexa_colors(1))
+print(list_of_hexa_colors(3))
+print(list_of_hexa_colors(5))
+---> ['#d0c82d']
+['#deaf64', '#ce3673', '#81711a']
+['#989557', '#3c373b', '#9a269c', '#05ef65', '#452df4']
