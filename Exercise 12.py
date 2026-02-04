@@ -56,3 +56,15 @@ print(list_of_hexa_colors(5))
 ---> ['#d0c82d']
 ['#deaf64', '#ce3673', '#81711a']
 ['#989557', '#3c373b', '#9a269c', '#05ef65', '#452df4']
+
+import random
+def list_of_rgb_colors(count):
+  colors = []
+  for _ in range(count):
+      r = random.randint(0, 255)
+      g = random.randint(0, 255)
+      b = random.randint(0, 255)
+      colors.append((r, g, b))
+  return colors
+print(list_of_rgb_colors(3))
+---> [(149, 146, 33), (249, 95, 180), (184, 211, 65)]
