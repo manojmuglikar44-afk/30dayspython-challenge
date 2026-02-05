@@ -68,3 +68,41 @@ def list_of_rgb_colors(count):
   return colors
 print(list_of_rgb_colors(3))
 ---> [(149, 146, 33), (249, 95, 180), (184, 211, 65)]
+
+import random
+def generate_colors(num, n):
+    colors = []
+    if num == 'hexa':
+        for _ in range(n):
+            hex_color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
+            colors.append(hex_color)
+    elif num == 'rgb':
+        for _ in range(n):
+            r = random.randint(0, 255)
+            g = random.randint(0, 255)
+            b = random.randint(0, 255)
+            rgb_color = f"rgb({r},{g},{b})"
+            colors.append(rgb_color)
+    else:
+        raise ValueError("num must be 'hexa' or 'rgb'")
+    return colors
+print(generate_colors('hexa', 3))
+print(generate_colors('hexa', 1)) 
+print(generate_colors('rgb', 3))
+print(generate_colors('rgb', 1)) 
+--->
+['#5b6424', '#eeaf34', '#597291']
+['#222f9b']
+['rgb(159,217,132)', 'rgb(229,27,34)', 'rgb(60,125,3)']
+['rgb(159,218,242)']
+
+#Exercises: Level 3
+
+import random 
+def shuffle_list(list):
+    lst = list[:]
+    random.shuffle(lst)
+    return lst
+
+print(shuffle_list([1,2,3,4,5,6,7,8,9,10]))
+--->[5, 4, 1, 2, 8, 6, 9, 7, 10, 3]
