@@ -154,8 +154,8 @@ Exercises: Level 2
    generate_colors('hexa', 1) # ['#b334ef']
    generate_colors('rgb', 3)  # ['rgb(5, 55, 175','rgb(50, 105, 100','rgb(15, 26, 80'] 
    generate_colors('rgb', 1)  # ['rgb(33,79, 176)']
-                                                                                                   
-Exercises: Level 3
+                                                                                                       
+Exercises: Lvl 3
                                                                                                    
 1.Call your function shuffle_list, it takes a list as a parameter and it returns
   a shuffled list
